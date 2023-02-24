@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+html {
+  box-sizing: border-box;
+  background-color: #181818;
+  color:#a3a3a3;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+h1 {
+  font-size: 7vw;
+  font-family: 'Bebas Neue';
+  text-align: center;
+  color: #f40612;
+  text-shadow: 1px 1px 2px #a3a3a3;
+}
+h2 {
+  font-family: 'Bebas Neue';
+}
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: #a3a3a3;
+  font-family: Verdana;
+}
+.checked {
+    color: orange;
+}
+.resegna {
+  font-family: Verdana;
+}
+a:link, a:visited {
+  border: none;
+  outline: 0;
+  background-color:#f40612;
+  color: #181818;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+  font-family: 'Bebas Neue';
+  
+}
+
+
+a:hover, a:active {
+  background-color: #a3a3a3;
+}
+.video {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+footer{
+  background-color: #181818;
+  background-image: linear-gradient(90deg, #181818);
+  color: #a3a3a3;
+  padding: 50px 0 30px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  font-family: 'Bebas Neue';
+}
+
+
+footer .up {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #f40612;
+  color: #a3a3a3;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -25px;
+  border-radius: 50%;
+  line-height: 50px;
+  font-size: 18px;
+}
+
+</style>
+</head>
+<body>
+
+<h1 id="start">La Cartelera </h1>
+<p  style="font-size:2vw; text-align:center;">¿Cuales son las películas para ver ahora? 10 Reseñas de películas para ver solo en Netflix.</p>
+<br>
+
+<div class="row">
+  
+
+  <div class="column">
+    <div class="card">
+      <img src="https://i.blogs.es/21f311/la-gente-como-vosotros/1366_2000.jpeg" alt="La gente como vosotros" style="width:100%">
+      <div class="container">
+        <h2>Ustedes (2023)</h2>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+         <span class="fa fa-star"></span>
+        <p class="title">Género: Comedia</p>
+        <p class="title">Director: Kenya Barris</p>
+        <p class="title">Protagonistas: Jonah Hill, Lauren London, Eddie Murphy, Julia Louis-Dreyfus, David Duchovny, Nia Long.</p>
+        <p class="title">Sinopsis:</p>
+        <p class="resegna">Ezra Cohen y Amira Mohammed  se conocieron, se enamoraron perdidamente el uno del otro. 
+        Tras un tiempo deciden comprometerse. Los padres de Ezra, reciben de manera eufórica la noticia,
+         pero, en cambio, la familia de Amira no está tan contenta.</p>
+         <a href="https://www.netflix.com/ar/title/81194505" target="_blank">Ver trailer</a>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://media.tycsports.com/files/2023/02/16/535270/tu-casa-o-la-mia_w862.webp" alt="Tu casa o la mia" style="width:100%">
+      <div class="container">
+        <h2>Tu casa o la mia (2023)</h2>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+         <span class="fa fa-star"></span>
+          <p class="title">Género: Comedia romántica</p>
+          <p class="title">Director: Aline Brosh McKenna</p>
+          <p class="title">Protagonistas: Reese Witherspoon, Ashton Kutcher, Jessie Williams, Steve Zahn, 
+          Zoe Chao, Tig Notaro, Wesley Kimmel, Rachel Bloom, Griffin Matthews, Vella Lovell,</p>
+          <p class="title">Sinopsis:</p>
+          <p class="resegna">Debbie y Peter son muy amigos y muy distintos entre sí. Cuando intercambian 
+          casas y vidas durante una semana descubren que quizás lo que creen que quieren no es lo que 
+          realmente necesitan.</p>
+          <a href="https://www.netflix.com/ar/title/81045831" target="_blank">Ver trailer</a>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="https://i.blogs.es/b7aa13/metal-lords/1366_2000.jpeg" alt="Metal Lords" style="width:100%">
+      <div class="container">
+        <h2>Metal Lords (2022)</h2>
+        <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        <p class="title">Género: Musical, adolescentes</p>
+        <p class="title">Director: Peter Sollett</p>
+        <p class="title">Protagonistas: Brett Gelman, Adrian Greensmith, Jaeden Martell,
+             Sufe Bradshaw, Katie O'Grady, Isis Hainsworth, Teddy Van Ee, Noah Urrea, 
+             Michelle Fang, Katie McCabe, Mike D Harris, Parker Hall.</p>
+        <p class="title">Sinopsis:</p>
+        <p class="resegna">Para los inadaptados adolescentes Hunter y Kevin, el camino hacia la gloria es claro:
+            dedicarse al metal, ganar la Batalla de las Bandas y ser adorados como dioses.</p>
+            <a href="https://www.netflix.com/ar/title/81207588" target="_blank">Ver trailer</a>
+            
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://indiehoy.com/wp-content/uploads/2023/01/narvik.jpg" alt="Narvik" style="width:100%">
+      <div class="container">
+        <h2>Narvik (2022)</h2>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+          <p class="title">Género: Bélica</p>
+          <p class="title">Director: Erik Skjoldbjærg</p>
+          <p class="title">Protagonistas: Kristine Hartgen, Carl Martin Eggesbø, Henrik Mestad, 
+            Stig Henrik Hoff, Christoph Bach, Magnus Dugdale, Ollie Campbell, Benjamin Noble,
+            Emil Johnsen, Holger Handtke.</p>
+          <p class="title">Sinopsis:</p>
+          <p class="resegna">En el contexto de la primera derrota de Hitler en la Segunda Guerra Mundial, 
+            un soldado noruego regresa a casa y descubre algo impactante sobre su esposa.</p>
+            <a href="https://www.netflix.com/ar/title/81166149" target="_blank">Ver trailer</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://i.blogs.es/9a81da/elextrano/1366_2000.jpeg" alt="El extraño" style="width:100%">
+      <div class="container">
+        <h2>El extraño (2022)</h2>
+        <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            
+            <span class="fa fa-star"></span>
+          <p class="title">Género: Thriller</p>
+          <p class="title">Director: Thomas M. Wright</p>
+          <p class="title">Protagonistas: Joel Edgerton, Sean Harris, Ewen Leslie, Kameron Hood, 
+          Jada Alberts, Steve Mouzakis, Alan Dukes, Mike Foenander, Fletcher Humphrys, Simon Elrahi.</p>
+          <p class="title">Sinopsis:</p>
+          <p class="resegna">Un policía infiltrado creará una intensa e íntima relación con un sospechoso de asesinato 
+          para ganarse su confianza e intentar sacarle una confesión.</p>
+          <a href="https://www.netflix.com/ar/title/81621414" target="_blank">Ver trailer</a>
+          
+          
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/the-good-nurse-eddie-redmayne-jessica-chastain-1662566625.jpg?resize=768:*" alt="La buena enfermera" style="width:100%">
+      <div class="container">
+        <h2>La buena enfermera (2022)</h2>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+        <p class="title">Género: Thriller. Basado en hechos reales.</p>
+        <p class="title">Director: Tobias Lindholm</p>
+        <p class="title">Protagonistas: Jessica Chastain, Eddie Redmayne, Nnamdi Asomugha, 
+        Kim Dickens, Noah Emmerich, Ajay Naidu, Devyn McDowell, Chris Henry Coffey.Brooke Stacy Mills,
+         Alix West Lefler.</p>
+        <p class="title">Sinopsis:</p>
+        <p class="resegna">Charlie Cullen es un enfermero, buen  padre y marido. Se ganaba la vida como cuidador 
+        en hospitales de las ciudades de Nueva Jersey y Pensilvania a lo largo de 16 años.</p>
+       
+        <a href="https://www.netflix.com/ar/title/81260083" target="_blank">Ver trailer</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/wonder-unit-12577rc-1668694236.jpg?resize=768:*" alt="El Prodigio" style="width:100%">
+      <div class="container">
+        <h2>El Prodigio (2022)</h2>
+        <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+        <p class="title">Género: Drama. Thriller. </p>
+        <p class="title">Director:</p>
+        <p class="title">Protagonistas: Florence Pugh, Tom Burke, Kíla Lord Cassidy, Niamh Algar, Ciarán Hinds, 
+          Toby Jones, Elaine Cassidy, Brian F. O'Byrne, David Wilmot, Dermot Crowley.</p>
+        <p class="title">Sinopsis:</p>
+        <p class="resegna"> Una niña de once años deja de comer pero permanece milagrosamente viva y en buen estado. La enfermera 
+        inglesa Lib Wright es llevada a un pequeño pueblo para observar a Anna O'Donnell.</p>
+        <a href="https://www.netflix.com/ar/title/81426931" target="_blank">Ver trailer</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://finde.latercera.com/wp-content/uploads/2020/03/LG_Unit_15937.jpg" alt="Chicas Perdidas" style="width:100%">
+      <div class="container">
+        <h2>Chicas Perdidas (2020)</h2>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p class="title">Género: Thriller. Drama.</p>
+        <p class="title">Director: Liz Garbus</p>
+        <p class="title">Protagonistas: Amy Ryan, Thomasin McKenzie, Lola Kirke, Gabriel Byrne, Oona Laurence, 
+          Miriam Shor, Dean Winters, Kevin Corrigan, Austyn Johnson, Rosal Colon.</p>
+        <p class="title">Sinopsis:</p>
+        <p class="resegna">Cuando la hija de Mari Gilbert desaparece, la inacción policial lleva a que sea ella quien comience 
+        una investigación particular en la isla de Long Island en la que Shannan fue vista por última vez.</p>
+        <a href="https://www.netflix.com/ar/title/80223927" target="_blank">Ver trailer</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://indiehoy.com/wp-content/uploads/2022/09/yo-estuve-aqui-.jpg" alt="Yo estuve aquí" style="width:100%">
+      <div class="container">
+        <h2>Yo estuve aquí (2022)</h2>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+        <p class="title">Género: Thriller. Crimen.</p>
+        <p class="title">Director: Babak Anvari</p>
+        <p class="title">Protagonistas: George MacKay, Percelle Ascott, Kelly MacDonald, Hugh Bonneville, 
+          Varada Sethu, Lee Byford, Antonio Aakeel, Michelle Thomas, Amerjit Deu, Guy Robbins.</p>
+        <p class="title">Sinopsis:</p>
+        <p class="resegna">Un joven grafitero que se dedica a asaltar las casas de los ricos, pero descubre un secreto impactante 
+        que lo lleva a un viaje que lo pone en peligro a sí mismo y a sus seres queridos.</p>
+        <a href="https://www.netflix.com/ar/title/81477746" target="_blank">Ver trailer</a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <div class="row">
+    
+     
+
+  <div class="card"> 
+    <div class="video"> 
+      <iframe class="responsive-iframe" src="https://www.youtube.com/embed/MiFEZu7pQo0?autoplay=1&mute=1"title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="container1">
+          <h2>Imperdonable (2021)</h2>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+            <p class="title">Género: Drama</p>
+            <p class="title">Director: Nora Fingscheidt</p>
+            <p class="title">Protagonistas: Sandra Bullock, Viola Davis, Rob Morgan, Vincent D'Onofrio, Jon Bernthal, 
+            Aisling Franciosi, Richard Thomas, Linda Emond, Emma Nelson, Toby Hargrave.</p>
+            <p class="title">Sinopsis:</p>
+            <p class="resegna">Tras salir de prisión después de cumplir condena por un crimen violento.su única esperanza de redención 
+            es encontrar a su hermana pequeña a la que tuvo que dejar detrás.</p>
+          <br/>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  
+  <a href="#start" class="up">
+    <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <p>© copyright  2023  <a href="index.html" target="_blank">Vanesa R. Gamarra</a></p>
+    <p>Taller: Intro a Web Pages - Club Digital Compas</p>
+</footer>
+</body>
+</html>
