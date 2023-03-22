@@ -1,94 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-        *{
-            font-family: 'Roboto';
-        }
-        header {
-            background-color: #ced0d8;
-            padding: 20px;
-            text-align: center;
-            font-size: 2vw;
-        }
-        a {
-            color: hotpink;
-          }
-          
-        .responsive {
-            max-width: 100%;
-            height: auto;
-        }
-        .content {
-            margin-top: 100px;
-            margin-bottom: 100px;
-            margin-right: 150px;
-            margin-left: 300px;
-            font-size: 1.7vw;
-        }
-        
-        /* Style the footer */
-        footer {
-            background-color: #ced0d8;
-            padding: 50px;
-            text-align: center;
-            font-size: 1.4vw;
-        }
-    </style>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');  
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Signika';
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+/* Style the header */
+header {
+  background-color: #ffdf96;
+  padding: 30px;
+  text-align: center;
+  font-size: 2.7vw;
+  color: rgb(0, 0, 0);
+  
+}
+
+  
+.container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+  
+.container img {vertical-align: middle;}
+  
+.container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.3); /* Black background with 0.3 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    font-size: 1.6vw;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 600px; /* only for demonstration, should be removed */
+  background: #FFCCAC;
+  padding: 20px;
+  font-size: 1.5vw;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ol{
+  list-style-type: none;
+  padding: 0; 
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 600px; /* only for demonstration, should be removed */
+  line-height: 2.5;
+  font-size: 1.5vw;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 150px;  
+  padding: 30px;
+  text-align: center;
+  font-size: 25px;
+  color: #000000;
+}
+/* Style the footer */
+footer {
+  background-color: #ffdf96;
+  padding: 10px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
 </head>
 <body>
-    <header> 
-    <h1>Tutorial</h1>
-    <h2>Como hacer un sitio web con Canva</h2>
-    </header>
-    <p style="text-align:center;">Para crear un sitio sencillo utilizando las plantillas y/o combinarlas entre distintas plantillas o empezar de cero.</p>
-    <p><b><a href="https://vanesargamarra.github.io/ProyectoFinal/" target="_blank">Volver</a></b></p>
-    <div class="content"> 
-        
-        <h2>Usar plantillas para sitios web</h2>
-        <p>En la página de inicio de Canva,  encontrá la barra de búsqueda y escribí “sitio web”.</p>
-        <img src="..\img\01.png" alt="buscar sitio web" class="responsive" width="500" height="300">
-        <p>Hacé clic en  Sitio Web entre los resultados.</p>
-        <img src="..\img\02.png" alt="buscar segun tema" class="responsive" width="500" height="300">
-        <p>Explorá las plantillas disponibles. Hacé clic para abrir la plantilla que quieras y empezar a diseñar.</p>
-        <img src="..\img\03.png" alt="elegir plantilla" class="responsive" width="500" height="300">
-        <p>Cambiá el texto, las fotos y los colores.</p>
-        <img src="..\img\04.png" alt="personalizar plantilla" class="responsive" width="500" height="300">
-        <p>También podés agregar contenido de nuestras bibliotecas. 
-        Solo tenés que hacer clic en las distintas pestañas que están en el panel lateral del editor.</p>
-        <img src="..\img\05.png" alt="modificar elementos" class="responsive" width="500" height="300">
-        <img src="..\img\06.png" alt="diseño terminado" class="responsive" width="500" height="300">
-        <p>Para facilitar la navegación en tu sitio web, agregá un menú de navegación.</p>
-        </div>
-        <div class="content">    
-        <h3>Agregar un menú de navegación a los sitios web de Canva</h3>
-        <p>Cuando publicas diseños como sitios web, es útil darle un título a cada página.</p>
-        <img src="..\img\07.png" alt="títulos en paginas" class="responsive" width="500" height="300">
-        <p>Para seleccionar una página, hacé clic sobre ella.</p>
-        <img src="..\img\08.png" alt="vista previa" class="responsive" width="500" height="300">
-        <p>En la esquina inferior del editor, hacé clic en  Notas.</p>
-        <img src="..\img\09.png" alt="continuar publicación" class="responsive" width="500" height="300">
-        <p>En la parte superior del panel lateral, hacé clic en Agregar título de página al lado del número de la página.</p>
-        <img src="..\img\010.png" alt="elegir subdominio" class="responsive" width="500" height="300">
-        <p>Escribí el título de la página.</p>
-        <img src="..\img\011.png" alt="configuración diseño" class="responsive" width="500" height="300">
-        <p>Espera mientras procesa tu sitio.</p>
-        <img src="..\img\012.png" alt="esperando diseño" class="responsive" width="500" height="300">
-        <p>Hace click en Ver sitio web.</p>
-        <img src="..\img\013.png" alt="ver sitio web" class="responsive" width="500" height="300">
-        <p>Ya tenes un sencillo sitio web en Canva.</p>
-        <p><b><a href="https://vanesaroshanajgamarra.my.canva.site/" target="_blank"> Ir a ver el sitio creado </a></b></p>
-    </div>
 
-    <footer>
-        <p>Desarrollado por Vanesa R. Gamarra - 2023</p>
-        <p>Taller: Intro a Web Pages - Club Digital Compas</p>
-    </footer>
-        
+
+
+<header>
+    <h1>Blog de Cocina Argentina</h1>
+</header>
+<div class="container">  
+<img src="./alfajor.jpg" alt="alfajor" style="width:100%;">
+ <div class="content">
+    <h1 id="concept">Alfajor de coco y dulce de leche</h1>
+    <p>El coco y el dulce de leche son mejores amigos, como lo demuestra esta confitura rica y bien argentina, muy fácil de hacer en casa, que está lista en pocos minutos.
+</p>
+  </div>
+</div>
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://vanesargamarra.github.io/ProyectoFinal/">Sobre mi | Contacto</a></li>
+      
+    </ul>
+    <ol>
+        <li><strong>Tiempo de cocción:</strong> 25 min.</li>
+        <li><strong>Tiempo de preparación:</strong> 20 min.</li>
+        <li><strong>Tiempo total:</strong> 45 min.</li>
+        <li><strong>Porciones:</strong> 24</li>
+    </ol>
+    <h3>Ingredientes</h3>
+
+    <ul>
+      <li><strong>Miel (opcional),</strong> ½ cucharada</li>
+      <li><strong>Dulce de leche repostero,</strong> 1 pote de 250 g</li>
+      <li><strong>Manteca,</strong> 100 g</li>
+      <li><strong>Azúcar,</strong> 140 g</li>
+      <li><strong>Huevos,</strong> 2 huevos</li>
+      <li><strong>Coco rallado,</strong> 200 g</li>
+      <li><strong>Harina,</strong> 25 g</li>
+      <li><strong><mark> Para celiacos:</mark> utilizar productos sin TACC</strong></li>
+      
+    </ul>
+  </nav>
+  
+
+  <article>
+    <h2>Preparación</h2>
+    <ol>
+        <li>Para hacer las tapitas de coco: mezclar la manteca pomada con el azúcar.</li>
+        <li>Luego, incorporar los huevos de a uno, la miel, el coco rallado y la harina. </li>
+        <li>Mezclar bien todos los ingredientes.</li> 
+        <li>Colocar la mezcla en una manga con pico rizado y realizar espirales formando círculos sobre una placa previamente enmantecada.</li>
+        <li>Estos círculos serán las tapitas de los alfajores.</li>
+        <li>Llevar a un horno previamente precalentado a 180°C durante 20 o 25 minutos, aproximadamente, hasta que estén las tapas apenas doraditas.</li>
+        <li>Una vez listas, retirar del horno y dejar enfriar.</li>
+
+    </ol>
+  </article>
+</section>
+<section>
+     
+        <div class="card"> 
+            <h2>Tips para elaborar los alfajores de coco con dulce de leche</h2>
+            
+            <p>- En lugar de alfajores, con la misma masa se pueden preparar conitos de coco y bañarlos con 
+            dulce de leche. ¡Quedan riquísimos!</p>
+
+            <p>- Para hacer los alfajores de coco con dulce de leche <a href="#concept">sin TACC, es decir, aptos para celíacos,</a>
+                simplemente eliminar la harina o reemplazarla por mezcla sin gluten apta para celíacos.</p>
+
+            <a href="https://www.lanacion.com.ar/recetas/">Para mas recetas</a>
+        </div> 
+
+</section>
+
+<footer>
+  <p>2023 VRG</p>
+  <p>Taller: Intro a Web Pages - Club Digital Compas</p>
+</footer>
+
 </body>
 </html>
